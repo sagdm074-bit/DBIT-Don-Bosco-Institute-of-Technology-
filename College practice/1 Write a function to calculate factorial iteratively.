@@ -1,0 +1,18 @@
+//1 Write a function to calculate factorial iteratively.
+#include<stdio.h>
+
+int factorial(int n){
+    int result = 1;
+    for(int i=1; i<=n; i++){
+        result*=i; // multiply i with result
+    }
+    return result;
+}
+int main(){
+    int n;
+    printf("Enter till what number you'd like to have the factorial");
+    scanf("%d", &n);
+    int fact = factorial(n);
+    printf("The factorial of %d is %d\n", n , fact);
+    return 0;
+}
