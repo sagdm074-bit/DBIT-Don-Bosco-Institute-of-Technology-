@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+    int nos_of_books, word_length_of_book;
+    scanf("%d" "%d", &nos_of_books, &word_length_of_book);
+
+    char booknames[nos_of_books][word_length_of_book];
+    int copies[nos_of_books], issued[nos_of_books];
+
+    // this is for inputting the book names
+    for(int i=0; i< nos_of_books; i++){
+        scanf("%s", booknames[i]);
+    }
+
+    //for inputting the total nos of copies for each book
+    for(int i=0; i<nos_of_books; i++){
+        scanf("%d", &copies[i]);
+    }
+
+    //for inputting the actual nos of copies been issued out of this total copies
+    for(int i=0; i<nos_of_books; i++){
+        scanf("%d", &issued[i]);
+    }
+
+    //for total nos of avilable copies
+    for(int i=0; i<nos_of_books; i++){
+        int avilable = copies[i] - issued[i];
+        printf("%s" "%d\n",booknames[i], avilable);
+    }
+
+    return 0;
+}
