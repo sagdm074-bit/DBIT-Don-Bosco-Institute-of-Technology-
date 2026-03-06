@@ -1,0 +1,21 @@
+# Multi-Agent Workshop - Required Packages
+# Install with: pip install -r requirements.txt
+
+# LLM APIs
+groq>=0.9.0            # Groq API (free tier available - fast inference)
+
+# Embeddings (open-source, runs locally - completely free)
+sentence-transformers>=2.2.0  # Hugging Face sentence embeddings
+
+# Document processing
+pymupdf>=1.24.0        # import as 'fitz' - PDF text extraction
+
+# Vector search
+faiss-cpu>=1.7.0       # Facebook's vector similarity search
+numpy>=1.24.0          # Numerical computing
+
+# Data validation
+pydantic>=2.0.0        # Structured output validation
+
+# Environment
+python-dotenv>=1.0.0   # Load .env file for API keys
