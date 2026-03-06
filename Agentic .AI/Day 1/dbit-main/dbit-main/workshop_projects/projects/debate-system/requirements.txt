@@ -1,0 +1,20 @@
+# Multi-Agent Workshop - Required Packages
+# Install with: pip install -r requirements.txt
+
+# LLM APIs (install at least one)
+google-genai>=1.0.0    # Google Gemini (recommended - free tier available)
+# openai>=1.0.0        # OpenAI (optional)
+# anthropic>=0.30.0    # Anthropic (optional)
+
+# Document processing
+pymupdf>=1.24.0        # import as 'fitz' - PDF text extraction
+
+# Vector search
+faiss-cpu>=1.7.0       # Facebook's vector similarity search
+numpy>=1.24.0          # Numerical computing
+
+# Data validation
+pydantic>=2.0.0        # Structured output validation
+
+# Environment
+python-dotenv>=1.0.0   # Load .env file for API keys
